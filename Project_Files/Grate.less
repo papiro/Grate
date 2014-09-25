@@ -8,13 +8,40 @@
 @silver: #5c6566;
 @dullCyan: #304545;
 
+
+/*Default module margin & padding settings*/
+@a: .2em;
+@b: .1em;
+@c: .2em;
+@d: .3236067978em;
+
+/*STAGING AREA FOR NEW SETTINGS*/
+@b: .3em;
+
+
 /*all mixins take the width value as parameters*/
+.moduleDimensions(){
+	margin: @a @b;
+	padding: @c @d;
+}
 
 .moduleSize(@width){
 	@height: (@width/@gr);
 	
 	width: @width;
-	height: @height;	
+	height: @height;
+}
+
+.Expand(@from, @to){
+	@toHeight: (@to / @gr);
+	@fromHeight: (@from / @gr);
+
+	@heightDiff: (@toHeight - @fromHeight);
+	@widthDiff: (@to - @from);
+
+	margin: -(@heightDiff/2-@a) -(@widthDiff/2-@b);
+	width: @to;
+	height: @toHeight;
 }
 
 /*  Grate.css by Pierre Alfred Pirault
@@ -30,6 +57,14 @@
 @import 'normalize.css';
 @import 'GGS_snippet.css';
 
+body {  
+  padding-top: 5em;
+
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
 .grate {
 	display: flex;
 	align-items: center;
@@ -42,10 +77,10 @@
 	transition: 1s ease all;	
 
 	/*Default module size************************ */
-	.moduleSize(18em);
+	.moduleSize(18em);	
 
-	margin: .2em .1em;
-	padding: .2em .3236067978em;
+	.moduleDimensions();
+
 	border: .5em solid black;
 
 	overflow: auto;
@@ -69,56 +104,103 @@
 
 .expand, .expand-large, .expand-larger, .expand-x-large, .expand-largest {
 	border-color: @rust;
-}
-
-.expand:hover, .expand-large:hover, .expand-larger:hover, .expand-x-large:hover, .expand-largest:hover {	
-	color: @citrus;
-	border: 0;
-	background-color: @dullCyan;
-	z-index: 1;
-	box-shadow: 0 0 2em @rustyGold;
-}
-
-.expand:hover {
-	.expand(@from, @to){
-		margin:;
-		width: ;
+	&:hover {
+		color: @citrus;
+		border: 0;
+		background-color: @dullCyan;
+		z-index: 1;
+		box-shadow: 0 0 2em @rustyGold;
 	}
-
-
-	margin: -1.654101965em -2.9em;
-	width: 24em;
-	height: 14.83281573em;	
 }
 
-.expand-large:hover {
-	margin: -3.50820393em -5.9em;
-	width: 30em;
-	height: 18.54101966em;
+.expand:hover {		
+	.x-small& {
+		.Expand(6em, 12em);
+	}
+	.small& {
+		.Expand(12em, 18em);
+	}
+	& {
+		.Expand(18em, 24em);
+	}
+	.large& {
+		.Expand(24em, 30em);
+	}
+	.x-large& {
+		.Expand(30em, 35em);
+	}
 }
 
-.expand-larger:hover {
-	margin: -5.053288903em -8.4em;
-	width: 35em;
-	height: 21.63118961em;
+.expand-large:hover {		
+	.x-small& {
+		.Expand(6em, 18em);
+	}
+	.small& {
+		.Expand(12em, 24em);
+	}
+	& {
+		.Expand(18em, 30em);
+	}
+	.large& {
+		.Expand(24em, 35em);
+	}
+	.x-large& {
+		.Expand(30em, 40em);
+	}
 }
 
-.expand-x-large:hover {
-	margin: -6.598373875em -10.9em;
-	width: 40em;
-	height: 24.72135955em;
+.expand-larger:hover {		
+	.x-small& {
+		.Expand(6em, 23em);
+	}
+	.small& {
+		.Expand(12em, 30em);
+	}
+	& {
+		.Expand(18em, 35em);
+	}
+	.large& {
+		.Expand(24em, 40em);
+	}
+	.x-large& {
+		.Expand(30em, 45em);
+	}
 }
 
-.expand-largest:hover {
-	margin: -8.143458847em -13.4em;
-	width: 45em;
-	height: 27.81152949em;
+.expand-x-large:hover {		
+	.x-small& {
+		.Expand(6em, 30em);
+	}
+	.small& {
+		.Expand(12em, 35em);
+	}
+	& {
+		.Expand(18em, 40em);
+	}
+	.large& {
+		.Expand(24em, 45em);
+	}
+	.x-large& {
+		.Expand(30em, 50em);
+	}
 }
 
-.x-small.expand:hover {
-	margin: -5.362305899em -8.9em;
-	width: 24em;
-	height: 14.83281573em;
+.expand-largest:hover {		
+	.x-small& {
+		.Expand(6em, 35em);
+	}
+	.small& {
+		.Expand(12em, 40em);
+	}
+	& {
+		.Expand(18em, 45em);
+	}
+	.large& {		
+		.Expand(24em, 50em);
+	}
+	.x-large& {
+		.Expand(30em, 55em);
+	}
 }
 
 .module .module {

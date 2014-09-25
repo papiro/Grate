@@ -1,5 +1,7 @@
 @import 'normalize.css';
 @import 'GGS_snippet.css';
+/*Default module margin & padding settings*/
+/*STAGING AREA FOR NEW SETTINGS*/
 /*all mixins take the width value as parameters*/
 /*  Grate.css by Pierre Alfred Pirault
 *   fluid, em-based, content-module design
@@ -10,6 +12,12 @@
 *  Remember that certain properties in Normalize use pixels as their measuring device
 *
 */
+body {
+  padding-top: 5em;
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em;
+}
 .grate {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,8 +40,8 @@
   /*Default module size************************ */
   width: 18em;
   height: 11.1246118em;
-  margin: .2em .1em;
-  padding: .2em .3236067978em;
+  margin: 0.2em 0.3em;
+  padding: 0.2em 0.3236068em;
   border: .5em solid black;
   overflow: auto;
   white-space: nowrap;
@@ -74,34 +82,129 @@
   box-shadow: 0 0 2em #d4b82b;
 }
 .expand:hover {
-  margin: -1.65410196em -2.9em;
+  margin: -1.65410197em -2.7em;
   width: 24em;
   height: 14.83281573em;
 }
-.expand-large:hover {
-  margin: -3.50820393em -5.9em;
+.x-small.expand:hover {
+  margin: -1.65410197em -2.7em;
+  width: 12em;
+  height: 7.41640786em;
+}
+.small.expand:hover {
+  margin: -1.65410197em -2.7em;
+  width: 18em;
+  height: 11.1246118em;
+}
+.large.expand:hover {
+  margin: -1.65410197em -2.7em;
   width: 30em;
   height: 18.54101966em;
 }
-.expand-larger:hover {
-  margin: -5.0532889em -8.4em;
+.x-large.expand:hover {
+  margin: -1.34508497em -2.2em;
   width: 35em;
-  height: 21.63118961em;
+  height: 21.6311896em;
 }
-.expand-x-large:hover {
-  margin: -6.59837388em -10.9em;
+.expand-large:hover {
+  margin: -3.50820393em -5.7em;
+  width: 30em;
+  height: 18.54101966em;
+}
+.x-small.expand-large:hover {
+  margin: -3.50820393em -5.7em;
+  width: 18em;
+  height: 11.1246118em;
+}
+.small.expand-large:hover {
+  margin: -3.50820393em -5.7em;
+  width: 24em;
+  height: 14.83281573em;
+}
+.large.expand-large:hover {
+  margin: -3.19918694em -5.2em;
+  width: 35em;
+  height: 21.6311896em;
+}
+.x-large.expand-large:hover {
+  margin: -2.89016994em -4.7em;
   width: 40em;
   height: 24.72135955em;
 }
-.expand-largest:hover {
-  margin: -8.14345885em -13.4em;
+.expand-larger:hover {
+  margin: -5.0532889em -8.2em;
+  width: 35em;
+  height: 21.6311896em;
+}
+.x-small.expand-larger:hover {
+  margin: -5.0532889em -8.2em;
+  width: 23em;
+  height: 14.21478174em;
+}
+.small.expand-larger:hover {
+  margin: -5.3623059em -8.7em;
+  width: 30em;
+  height: 18.54101966em;
+}
+.large.expand-larger:hover {
+  margin: -4.74427191em -7.7em;
+  width: 40em;
+  height: 24.72135955em;
+}
+.x-large.expand-larger:hover {
+  margin: -4.43525491em -7.2em;
   width: 45em;
   height: 27.81152949em;
 }
-.x-small.expand:hover {
-  margin: -5.3623059em -8.9em;
-  width: 24em;
-  height: 14.83281573em;
+.expand-x-large:hover {
+  margin: -6.59837388em -10.7em;
+  width: 40em;
+  height: 24.72135955em;
+}
+.x-small.expand-x-large:hover {
+  margin: -7.21640786em -11.7em;
+  width: 30em;
+  height: 18.54101966em;
+}
+.small.expand-x-large:hover {
+  margin: -6.90739087em -11.2em;
+  width: 35em;
+  height: 21.6311896em;
+}
+.large.expand-x-large:hover {
+  margin: -6.28935688em -10.2em;
+  width: 45em;
+  height: 27.81152949em;
+}
+.x-large.expand-x-large:hover {
+  margin: -5.98033989em -9.7em;
+  width: 50em;
+  height: 30.90169943em;
+}
+.expand-largest:hover {
+  margin: -8.14345885em -13.2em;
+  width: 45em;
+  height: 27.81152949em;
+}
+.x-small.expand-largest:hover {
+  margin: -8.76149284em -14.2em;
+  width: 35em;
+  height: 21.6311896em;
+}
+.small.expand-largest:hover {
+  margin: -8.45247584em -13.7em;
+  width: 40em;
+  height: 24.72135955em;
+}
+.large.expand-largest:hover {
+  margin: -7.83444185em -12.7em;
+  width: 50em;
+  height: 30.90169943em;
+}
+.x-large.expand-largest:hover {
+  margin: -7.52542486em -12.2em;
+  width: 55em;
+  height: 33.99186938em;
 }
 .module .module {
   position: inline;
