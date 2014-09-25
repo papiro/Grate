@@ -1,102 +1,15 @@
 @import 'normalize.css';
-/*  I em Grate.css by Pierre Alfred Pirault
-*   Mobile-first adaptive grid design
+@import 'GGS_snippet.css';
+/*all mixins take the width value as parameters*/
+/*  Grate.css by Pierre Alfred Pirault
+*   fluid, em-based, content-module design
 *   
 */
 /*
 *
 *  Remember that certain properties in Normalize use pixels as their measuring device
 *
-*
 */
-/*
-*
-*  Margin, padding, and border resets
-*  except for form elements
-*  
-*  Adapted gratefully from Joni Korpi's Golden Grid System <http://goldengridsystem.com/>
-*
-*/
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-th,
-td,
-article,
-aside,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-/*
-*	type size presets [adapted from Joni Korpi] <http://jonikorpi.com/>
-*
-*/
-body {
-  /* 16px / 24px */
-  padding-top: 5em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-.small {
-  /* 13px / 18px */
-  font-size: 0.8125em;
-  line-height: 1.3846153846153846em;
-}
-.normal,
-h3 {
-  /* 16px / 24px */
-  font-size: 1em;
-  line-height: 1.5em;
-  /* 24 */
-}
-.large,
-h2,
-h1 {
-  /* 26 / 36px */
-  font-size: 1.625em;
-  line-height: 1.3846153846153846em;
-}
-.huge {
-  /* 42px / 48px */
-  font-size: 2.625em;
-  line-height: 1.1428571428571428em;
-}
-.massive {
-  /* 68px / 72px */
-  font-size: 4.25em;
-  line-height: 1.0588235294117647em;
-}
-.gigantic {
-  /* 110px / 120px */
-  font-size: 6.875em;
-  line-height: 1.0909090909090908em;
-}
 .grate {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -116,20 +29,44 @@ h1 {
        box-sizing: border-box;
   -webkit-transition: 1s ease all;
           transition: 1s ease all;
+  /*Default module size************************ */
+  width: 18em;
+  height: 11.1246118em;
   margin: .2em .1em;
   padding: .2em .3236067978em;
   border: .5em solid black;
   overflow: auto;
   white-space: nowrap;
   text-align: left;
-  /*float: left;*/
 }
-.module.expand,
-.module.expand-large {
+.x-small {
+  width: 6em;
+  height: 3.70820393em;
+}
+.small {
+  width: 12em;
+  height: 7.41640786em;
+}
+.large {
+  width: 24em;
+  height: 14.83281573em;
+}
+.x-large {
+  width: 30em;
+  height: 18.54101966em;
+}
+.expand,
+.expand-large,
+.expand-larger,
+.expand-x-large,
+.expand-largest {
   border-color: #b68b25;
 }
-.module.expand:hover,
-.module.expand-large:hover {
+.expand:hover,
+.expand-large:hover,
+.expand-larger:hover,
+.expand-x-large:hover,
+.expand-largest:hover {
   color: #f6ab09;
   border: 0;
   background-color: #304545;
@@ -146,29 +83,29 @@ h1 {
   width: 30em;
   height: 18.54101966em;
 }
-.module .module {
-  position: inline;
-  margin: -0.2em;
+.expand-larger:hover {
+  margin: -5.0532889em -8.4em;
+  width: 35em;
+  height: 21.63118961em;
 }
-.one {
-  width: 6em;
-  height: 3.708203932em;
+.expand-x-large:hover {
+  margin: -6.59837388em -10.9em;
+  width: 40em;
+  height: 24.72135955em;
 }
-.small {
-  width: 12em;
-  height: 7.416407865em;
+.expand-largest:hover {
+  margin: -8.14345885em -13.4em;
+  width: 45em;
+  height: 27.81152949em;
 }
-.mid {
-  width: 18em;
-  height: 11.1246118em;
-}
-.large {
+.x-small.expand:hover {
+  margin: -5.3623059em -8.9em;
   width: 24em;
   height: 14.83281573em;
 }
-.five {
-  width: 30em;
-  height: 18.54101966em;
+.module .module {
+  position: inline;
+  margin: -0.2em;
 }
 /*Size - 2 Modules*/
 @media screen and (min-width: 47.5em) {
