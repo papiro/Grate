@@ -1,0 +1,198 @@
+@rust: #b68b25;
+@rustyGold: #d4b82b;
+@gold: #f6cf09;
+@paleGold: #f6cf09;
+@citrus: #ebeb00;
+@silver: #5c6566;
+@dullCyan: #304545;
+
+/*  I em Grate.css by Pierre Alfred Pirault
+*   Mobile-first adaptive grid design
+*   
+*/
+
+/*
+*
+*  Remember that certain properties in Normalize use pixels as their measuring device
+*
+*
+*/
+@import 'normalize.css';
+
+/*
+*
+*  Margin, padding, and border resets
+*  except for form elements
+*  
+*  Adapted gratefully from Joni Korpi's Golden Grid System <http://goldengridsystem.com/>
+*
+*/
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*
+*	type size presets [adapted from Joni Korpi] <http://jonikorpi.com/>
+*
+*/
+body {
+  /* 16px / 24px */
+
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.small {
+  /* 13px / 18px */
+
+  font-size: 0.8125em;
+  line-height: 1.3846153846153846em;
+}
+.normal, h3 {
+  /* 16px / 24px */
+
+  font-size: 1em;
+  line-height: 1.5em;
+  /* 24 */
+
+}
+.large, h2, h1 {
+  /* 26 / 36px */
+
+  font-size: 1.625em;
+  line-height: 1.3846153846153846em;
+}
+.huge {
+  /* 42px / 48px */
+
+  font-size: 2.625em;
+  line-height: 1.1428571428571428em;
+}
+.massive {
+  /* 68px / 72px */
+
+  font-size: 4.25em;
+  line-height: 1.0588235294117647em;
+}
+.gigantic {
+  /* 110px / 120px */
+
+  font-size: 6.875em;
+  line-height: 1.0909090909090908em;
+}
+
+.grate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.module {
+	box-sizing: border-box;
+
+	margin: .2em .1em;
+	padding: .2em .3236067978em;
+	border: .5em solid black;
+
+	overflow: auto;
+
+	white-space: nowrap;
+	text-align: left;
+	/*float: left;*/
+}
+
+.module:hover {	
+	position: relative;
+	overflow: visible;
+	color: red;
+	border: 0;
+	z-index: 1;
+}
+
+.expand:hover {
+	width: auto;
+	height: auto;
+}
+
+.module .module {
+	position: inline;
+	margin: -.2em;
+}
+
+.one {
+	width: 6em;
+	height: 3.708203932em;
+}
+
+.small {
+	width: 12em;
+	height: 7.416407865em;
+}
+
+.mid {
+	width: 18em;
+	height: 11.1246118em;
+}
+
+.large {
+	width: 24em;
+	height: 14.83281573em;
+}
+
+.five {
+	width: 30em;
+	height: 18.54101966em;
+}
+
+/*Size - 2 Modules*/
+@media screen and (min-width: 47.5em) {
+	.grate {
+		/*width: 37.4em;*/
+	}
+}
+/*Size - 3 Modules*/
+@media screen and (min-width: 60em) {
+	.grate {
+		/*width: 55.6em;*/
+	}
+}
+
+/*Size - 4 Modules*/
+@media screen and (min-width: 80em) {
+	.grate {
+		/*width: 74.5em;	*/	
+	}
+}
