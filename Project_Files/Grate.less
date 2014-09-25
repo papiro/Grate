@@ -1,8 +1,8 @@
 @rust: #b68b25;
 @rustyGold: #d4b82b;
-@gold: #f6cf09;
+@citrus: #f6ab09;
 @paleGold: #f6cf09;
-@citrus: #ebeb00;
+@limeYellow: #f0ff24;
 @silver: #5c6566;
 @dullCyan: #304545;
 
@@ -69,7 +69,7 @@ section {
 */
 body {
   /* 16px / 24px */
-
+  padding-top: 5em;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -117,11 +117,11 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	align-content: space-between;
 }
 
 .module {
 	box-sizing: border-box;
+	transition: 1s ease all;
 
 	margin: .2em .1em;
 	padding: .2em .3236067978em;
@@ -134,17 +134,28 @@ body {
 	/*float: left;*/
 }
 
-.module:hover {	
-	position: relative;
-	overflow: visible;
-	color: red;
+.module.expand, .module.expand-large {
+	border-color: @rust;
+}
+
+.module.expand:hover, .module.expand-large:hover {	
+	color: @citrus;
 	border: 0;
+	background-color: @dullCyan;
 	z-index: 1;
+	box-shadow: 0 0 2em @rustyGold;
 }
 
 .expand:hover {
-	width: auto;
-	height: auto;
+	margin: -1.654101965em -2.9em;
+	width: 24em;
+	height: 14.83281573em;
+}
+
+.expand-large:hover {
+	margin: -3.50820393em -5.9em;
+	width: 30em;
+	height: 18.54101966em;
 }
 
 .module .module {
