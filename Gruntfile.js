@@ -13,15 +13,17 @@ module.exports = function (grunt)
 			minify: {
 				expand: true,
 				cwd: 'Project_Files/css/',
-				src: '<%=pkg.name%>.css',
+				src: '*.css',
 				dest: 'Project_Files/css/min.css',
 				ext: '.min.css'
 			}
 		},
 		less: {
-			build: {
-				src: 'Project_Files/<%= pkg.name %>.less',
-				dest: 'Project_Files/css/<%= pkg.name %>.css'
+			development: {
+				files : {
+					'Project_Files/css/Grate.css' : 'Project_Files/Grate.less',
+					'Project_Files/css/elements.css' : 'Project_Files/elements.less'
+				}
 			}
 		},
 		autoprefixer: {
@@ -41,7 +43,7 @@ module.exports = function (grunt)
 				tasks: ['jshint']				
 			},
 			less: {
-				files: 'Project_Files/<%= pkg.name %>.less',
+				files: 'Project_Files/*.less',
 				tasks: 'less'				
 			},
 			css: {
