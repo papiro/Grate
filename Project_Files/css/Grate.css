@@ -1,14 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700,400);
 @import 'normalize.css';
 @import 'GGS_snippet.css';
-/*all mixins take the width value as parameters*/
-/*  Grate.css by Pierre Alfred Pirault
+/* all mixins take the width value as parameters */
+/*  
+* Grate.css by Pierre Alfred Pirault
 *   fluid, em-based, content-module design
-*   
 */
 /*
-*
 *  Remember that certain properties in Normalize use pixels as their measuring device
-*
 */
 .grate {
   display: -webkit-flex;
@@ -25,11 +24,9 @@
           flex-wrap: wrap;
 }
 .module {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  -webkit-transition: 1s ease all;
-          transition: 1s ease all;
-  /*Default module size************************ */
+  box-sizing: border-box;
+  transition: 1s ease all;
+  /* Default module size */
   width: 18em;
   height: 11.1246118em;
   margin: .2em .1em;
