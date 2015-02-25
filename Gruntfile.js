@@ -7,28 +7,25 @@ module.exports = function (grunt)
 			files: 'Gruntfile.js'
 		},
 		cssmin: {
-			options: {
-				banner: '/*<%=pkg.name%>.css minified! <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-			},			
 			minify: {
 				expand: true,
 				cwd: 'Project_Files/css/',
-				src: '*.css',
-				dest: 'Project_Files/css/min.css',
+				src: 'Grate.css',
+				dest: 'Project_Files/css/min/',
 				ext: '.min.css'
 			}
 		},
 		less: {
 			development: {
 				files : {
-					'Project_Files/css/Grate.css' : 'Project_Files/Grate.less',
-					'Project_Files/css/elements.css' : 'Project_Files/elements.less'
+					'Project_Files/css/Grate.css' : 'Project_Files/less/Grate.less',
+					'Project_Files/css/elements.css' : 'Project_Files/less/elements.less'
 				}
 			}
 		},
 		autoprefixer: {
 			files: {
-				src: 'Project_Files/css/<%=pkg.name%>.css'
+				src: 'Project_Files/css/*.css'
 			}			
 		},
 		watch: {
@@ -43,11 +40,11 @@ module.exports = function (grunt)
 				tasks: ['jshint']				
 			},
 			less: {
-				files: 'Project_Files/*.less',
+				files: 'Project_Files/less/*.less',
 				tasks: 'less'				
 			},
 			css: {
-				files: 'Project_Files/css/<%= pkg.name %>.css',
+				files: 'Project_Files/css/*.css',
 				tasks: ['autoprefixer', 'cssmin']
 			}
 		}
