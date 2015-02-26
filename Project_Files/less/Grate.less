@@ -1,49 +1,3 @@
-@gr: 1.618033989;
-
-@rust: #b68b25;
-@rustyGold: #d4b82b;
-@citrus: #f6ab09;
-@paleGold: #f6cf09;
-@limeYellow: #f0ff24;
-@silver: #5c6566;
-@dullCyan: #304545;
-
-
-/*Default module margin & padding settings*/
-@a: .2em;
-@b: .1em;
-@c: .2em;
-@d: .3236067978em;
-
-/*STAGING AREA FOR NEW SETTINGS*/
-@b: .3em;
-
-
-/*all mixins take the width value as parameters*/
-.moduleDimensions(){
-	margin: @a @b;
-	padding: @c @d;
-}
-
-.moduleSize(@width){
-	@height: (@width/@gr);
-	
-	width: @width;
-	height: @height;
-}
-
-.Expand(@from, @to){
-	@toHeight: (@to / @gr);
-	@fromHeight: (@from / @gr);
-
-	@heightDiff: (@toHeight - @fromHeight);
-	@widthDiff: (@to - @from);
-
-	margin: -(@heightDiff/2-@a) -(@widthDiff/2-@b);
-	width: @to;
-	height: @toHeight;
-}
-
 /*  
 * Grate.css by Pierre Alfred Pirault
 *   fluid, em-based, content-module design
@@ -53,16 +7,20 @@
 *  Remember that certain properties in Normalize use pixels as their measuring device
 */
 
+@import 'base';
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700,400);
 @import 'normalize.css';
 @import 'GGS_snippet.css';
-@impport 'elements.css'
+@import 'elements.css';
 
 body {  
-  padding-top: 5em;
+	font-family : 'Anonymous Pro', cursive;
+  	padding-top: 5em;
 
   /* 16px / 24px */
-  font-size: 1em;
-  line-height: 1.5em;
+  	font-size: 1em;
+  	line-height: 1.5em;
 }
 
 .grate {

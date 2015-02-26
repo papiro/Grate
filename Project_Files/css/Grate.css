@@ -1,35 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:700,400);
 @import 'normalize.css';
 @import 'GGS_snippet.css';
 @import 'elements.css';
-
-/*  Default module margin & padding settings
-*   STAGING AREA FOR NEW SETTINGS
-*   all mixins take the width value as parameters
-*   Grate.css by Pierre Alfred Pirault
+/*  
+* Grate.css by Pierre Alfred Pirault
 *   fluid, em-based, content-module design
-*
-*   Remember that certain properties in Normalize use pixels as their measuring device
 */
-
+/*
+*  Remember that certain properties in Normalize use pixels as their measuring device
+*/
+/*Default module margin & padding settings*/
+/*STAGING AREA FOR NEW SETTINGS*/
+/*all mixins take the width value as parameters*/
 body {
+  font-family: 'Anonymous Pro', cursive;
   padding-top: 5em;
   /* 16px / 24px */
   font-size: 1em;
   line-height: 1.5em;
 }
 .grate {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          -webkit-box-align: center;
           align-items: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          -webkit-box-pack: center;
           justify-content: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -39,7 +41,7 @@ body {
   box-sizing: border-box;
   -webkit-transition: 1s ease all;
           transition: 1s ease all;
-  /* Default module size */
+  /*Default module size************************ */
   width: 18em;
   height: 11.1246118em;
   margin: 0.2em 0.3em;
@@ -229,4 +231,25 @@ body {
   .grate {
     /*width: 74.5em;	*/
   }
+}
+
+
+/*Default module margin & padding settings*/
+/*STAGING AREA FOR NEW SETTINGS*/
+/*all mixins take the width value as parameters*/
+
+/*Default module margin & padding settings*/
+/*STAGING AREA FOR NEW SETTINGS*/
+/*all mixins take the width value as parameters*/
+header {
+  margin: 1em 0 1em 0;
+  border-top: 0.7em solid #5c6566;
+  border-bottom: 0.7em solid #5c6566;
+}
+header > h1 {
+  color: #d4b82b;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 0 0 .2em yellow;
+  margin-left: auto;
 }

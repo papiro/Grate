@@ -18,8 +18,7 @@ module.exports = function (grunt)
 		less: {
 			development: {
 				files : {
-					'Project_Files/css/Grate.css' : 'Project_Files/less/Grate.less',
-					'Project_Files/css/elements.css' : 'Project_Files/less/elements.less'
+					'Project_Files/css/Grate.css' : 'Project_Files/less/*.less'
 				}
 			}
 		},
@@ -66,5 +65,5 @@ module.exports = function (grunt)
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task(s).
-	grunt.registerTask('default', ['jshint', 'autoprefixer', 'cssmin', 'watch', 'less']);
+	grunt.registerTask('default', ['less', 'jshint', 'autoprefixer', 'cssmin']);
 };
