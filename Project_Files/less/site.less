@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700,400);
+
+@import 'thirdParty/Normalize';
+@import 'Grate/Grate';
+
+body {  
+	font-family : 'Anonymous Pro', cursive;
+  	padding-top: 5em;
+
+  /* 16px / 24px */
+  	font-size: 1em;
+  	line-height: 1.5em;
+}
+
+header {
+	margin: 1em 0 1em 0;
+	border-top: 0.7em solid @silver;
+	border-bottom: 0.7em solid @silver;
+
+	& > h1 {
+		color: @rustyGold;
+		font-size: 2em;
+		text-align: center;
+		text-shadow: 0 0 .2em yellow;
+		margin-left: auto;
+
+		& > span {
+		}
+	}
+}

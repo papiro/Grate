@@ -1,28 +1,13 @@
 /*  
 * Grate.css by Pierre Alfred Pirault
 *   fluid, em-based, content-module design
-*/
-
-/*
+*
 *  Remember that certain properties in Normalize use pixels as their measuring device
 */
 
-@import 'base';
+@import 'variables';
 @import 'colors';
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700,400);
-@import 'normalize.css';
-@import 'GGS_snippet.css';
-@import 'elements.css';
-
-body {  
-	font-family : 'Anonymous Pro', cursive;
-  	padding-top: 5em;
-
-  /* 16px / 24px */
-  	font-size: 1em;
-  	line-height: 1.5em;
-}
+@import 'mixins';
 
 .grate {
 	display: flex;
