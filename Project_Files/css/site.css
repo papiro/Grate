@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700,400);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700,400);
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -442,35 +442,39 @@ h1 {
 /*STAGING AREA FOR NEW SETTINGS*/
 /*all mixins take the width value as parameters*/
 .grate {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .module {
   box-sizing: border-box;
-  -webkit-transition: 1s ease all;
-          transition: 1s ease all;
+  transition: 1s ease all;
   /*Default module size************************ */
   width: 18em;
   height: 11.1246118em;
-  margin: 0.2em 0.3em;
+  margin: 0.2em 0.1em;
   padding: 0.2em 0.3236068em;
   border: .5em solid black;
   overflow: auto;
   white-space: nowrap;
   text-align: left;
+}
+.module.static {
+  white-space: normal;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.module.static:hover {
+  border-color: #e5d480;
+}
+.module.static::first-letter {
+  font-family: 'Lobster Two', cursive;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1em;
+}
+u {
+  text-decoration: overline;
 }
 .x-small {
   width: 6em;
@@ -507,127 +511,127 @@ h1 {
   box-shadow: 0 0 2em #d4b82b;
 }
 .expand:hover {
-  margin: -1.65410197em -2.7em;
+  margin: -1.65410197em -2.9em;
   width: 24em;
   height: 14.83281573em;
 }
 .x-small.expand:hover {
-  margin: -1.65410197em -2.7em;
+  margin: -1.65410197em -2.9em;
   width: 12em;
   height: 7.41640786em;
 }
 .small.expand:hover {
-  margin: -1.65410197em -2.7em;
+  margin: -1.65410197em -2.9em;
   width: 18em;
   height: 11.1246118em;
 }
 .large.expand:hover {
-  margin: -1.65410197em -2.7em;
+  margin: -1.65410197em -2.9em;
   width: 30em;
   height: 18.54101966em;
 }
 .x-large.expand:hover {
-  margin: -1.34508497em -2.2em;
+  margin: -1.34508497em -2.4em;
   width: 35em;
   height: 21.6311896em;
 }
 .expand-large:hover {
-  margin: -3.50820393em -5.7em;
+  margin: -3.50820393em -5.9em;
   width: 30em;
   height: 18.54101966em;
 }
 .x-small.expand-large:hover {
-  margin: -3.50820393em -5.7em;
+  margin: -3.50820393em -5.9em;
   width: 18em;
   height: 11.1246118em;
 }
 .small.expand-large:hover {
-  margin: -3.50820393em -5.7em;
+  margin: -3.50820393em -5.9em;
   width: 24em;
   height: 14.83281573em;
 }
 .large.expand-large:hover {
-  margin: -3.19918694em -5.2em;
+  margin: -3.19918694em -5.4em;
   width: 35em;
   height: 21.6311896em;
 }
 .x-large.expand-large:hover {
-  margin: -2.89016994em -4.7em;
+  margin: -2.89016994em -4.9em;
   width: 40em;
   height: 24.72135955em;
 }
 .expand-larger:hover {
-  margin: -5.0532889em -8.2em;
+  margin: -5.0532889em -8.4em;
   width: 35em;
   height: 21.6311896em;
 }
 .x-small.expand-larger:hover {
-  margin: -5.0532889em -8.2em;
+  margin: -5.0532889em -8.4em;
   width: 23em;
   height: 14.21478174em;
 }
 .small.expand-larger:hover {
-  margin: -5.3623059em -8.7em;
+  margin: -5.3623059em -8.9em;
   width: 30em;
   height: 18.54101966em;
 }
 .large.expand-larger:hover {
-  margin: -4.74427191em -7.7em;
+  margin: -4.74427191em -7.9em;
   width: 40em;
   height: 24.72135955em;
 }
 .x-large.expand-larger:hover {
-  margin: -4.43525491em -7.2em;
+  margin: -4.43525491em -7.4em;
   width: 45em;
   height: 27.81152949em;
 }
 .expand-x-large:hover {
-  margin: -6.59837388em -10.7em;
+  margin: -6.59837388em -10.9em;
   width: 40em;
   height: 24.72135955em;
 }
 .x-small.expand-x-large:hover {
-  margin: -7.21640786em -11.7em;
+  margin: -7.21640786em -11.9em;
   width: 30em;
   height: 18.54101966em;
 }
 .small.expand-x-large:hover {
-  margin: -6.90739087em -11.2em;
+  margin: -6.90739087em -11.4em;
   width: 35em;
   height: 21.6311896em;
 }
 .large.expand-x-large:hover {
-  margin: -6.28935688em -10.2em;
+  margin: -6.28935688em -10.4em;
   width: 45em;
   height: 27.81152949em;
 }
 .x-large.expand-x-large:hover {
-  margin: -5.98033989em -9.7em;
+  margin: -5.98033989em -9.9em;
   width: 50em;
   height: 30.90169943em;
 }
 .expand-largest:hover {
-  margin: -8.14345885em -13.2em;
+  margin: -8.14345885em -13.4em;
   width: 45em;
   height: 27.81152949em;
 }
 .x-small.expand-largest:hover {
-  margin: -8.76149284em -14.2em;
+  margin: -8.76149284em -14.4em;
   width: 35em;
   height: 21.6311896em;
 }
 .small.expand-largest:hover {
-  margin: -8.45247584em -13.7em;
+  margin: -8.45247584em -13.9em;
   width: 40em;
   height: 24.72135955em;
 }
 .large.expand-largest:hover {
-  margin: -7.83444185em -12.7em;
+  margin: -7.83444185em -12.9em;
   width: 50em;
   height: 30.90169943em;
 }
 .x-large.expand-largest:hover {
-  margin: -7.52542486em -12.2em;
+  margin: -7.52542486em -12.4em;
   width: 55em;
   height: 33.99186938em;
 }
@@ -653,6 +657,27 @@ h1 {
     /*width: 74.5em;	*/
   }
 }
+.ascii_face1 {
+  transition: 1s ease all;
+}
+.ascii_face1:before {
+  content: ':';
+  position: relative;
+  left: 2em;
+  bottom: .5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.ascii_face1:after {
+  content: '(_)';
+  letter-spacing: -0.1em;
+  font-size: 3em;
+}
+.ascii_face1:hover {
+  font-size: 1.7em;
+}
 body {
   font-family: 'Anonymous Pro', cursive;
   padding-top: 5em;
@@ -662,8 +687,8 @@ body {
 }
 header {
   margin: 1em 0 1em 0;
-  border-top: 0.7em solid #5c6566;
-  border-bottom: 0.7em solid #5c6566;
+  border-top: 2em groove #304545;
+  border-bottom: 2em groove #304545;
 }
 header > h1 {
   color: #d4b82b;
@@ -671,4 +696,7 @@ header > h1 {
   text-align: center;
   text-shadow: 0 0 .2em yellow;
   margin-left: auto;
+}
+header > h1 > span {
+  font-family: 'Lobster Two', cursive;
 }

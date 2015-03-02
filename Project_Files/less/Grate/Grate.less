@@ -22,15 +22,31 @@
 
 	/*Default module size************************ */
 	.moduleSize(18em);
-
 	.moduleDimensions();
-
 	border: .5em solid black;
-
 	overflow: auto;
-
 	white-space: nowrap;
 	text-align: left;
+	
+	&.static {
+		white-space: normal;
+		border-color: rgba(0,0,0,0.3);
+		
+		&:hover {
+			border-color: lighten( @rustyGold, 20% );
+		}
+		
+		&::first-letter {
+			font-family: 'Lobster Two', cursive;
+			font-weight: bold;
+			font-size: 2em;
+			line-height: 1em;
+		}
+	}
+}
+
+u {
+	text-decoration:overline;
 }
 
 .x-small {

@@ -1,8 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700,400);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700,400);
 
 @import 'thirdParty/Normalize';
 @import 'Grate/Grate';
+@import 'Grate/animations';
 
 body {  
 	font-family : 'Anonymous Pro', cursive;
@@ -15,8 +16,8 @@ body {
 
 header {
 	margin: 1em 0 1em 0;
-	border-top: 0.7em solid @silver;
-	border-bottom: 0.7em solid @silver;
+	border-top: 2em groove @dullCyan;
+	border-bottom: 2em groove @dullCyan;
 
 	& > h1 {
 		color: @rustyGold;
@@ -26,6 +27,7 @@ header {
 		margin-left: auto;
 
 		& > span {
+			font-family: 'Lobster Two', cursive;
 		}
 	}
 }

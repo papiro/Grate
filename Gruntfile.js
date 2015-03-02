@@ -39,7 +39,7 @@ module.exports = function (grunt)
 				tasks: ['jshint']				
 			},
 			less: {
-				files: 'Project_Files/less/*.less',
+				files: ['Project_Files/less/site.less', 'Project_Files/less/Grate/*.less'],
 				tasks: 'less'				
 			},
 			css: {
