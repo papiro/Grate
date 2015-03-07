@@ -442,14 +442,31 @@ h1 {
 /*STAGING AREA FOR NEW SETTINGS*/
 /*all mixins take the width value as parameters*/
 .grate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .module {
   box-sizing: border-box;
-  transition: 1s ease all;
+  -webkit-transition: 1s ease all;
+          transition: 1s ease all;
   /*Default module size************************ */
   width: 18em;
   height: 11.1246118em;
@@ -658,7 +675,8 @@ u {
   }
 }
 .ascii_face1 {
-  transition: 1s ease all;
+  -webkit-transition: 1s ease all;
+          transition: 1s ease all;
 }
 .ascii_face1:before {
   content: ':';
@@ -668,7 +686,9 @@ u {
   font-size: 1.5em;
   font-weight: bold;
   display: inline-block;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .ascii_face1:after {
   content: '(_)';
@@ -677,6 +697,22 @@ u {
 }
 .ascii_face1:hover {
   font-size: 1.7em;
+}
+ul {
+  list-style-type: none;
+}
+.li__1 > li:before {
+  display: inline-block;
+  padding-right: .1em;
+  content: "\2523";
+  font-size: 1em;
+}
+.li__1 > li li:before {
+  display: inline-block;
+  margin-left: 1em;
+  padding-right: 1em;
+  content: "\27A0";
+  font-size: .9em;
 }
 body {
   font-family: 'Anonymous Pro', cursive;
@@ -699,4 +735,10 @@ header > h1 {
 }
 header > h1 > span {
   font-family: 'Lobster Two', cursive;
+}
+ul {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
