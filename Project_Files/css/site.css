@@ -490,6 +490,15 @@ h1 {
   font-size: 2em;
   line-height: 1em;
 }
+.module > title {
+  margin: 0 auto;
+}
+.module > p {
+  padding: .5em;
+}
+.module.wrap {
+  white-space: normal;
+}
 u {
   text-decoration: overline;
 }
@@ -673,6 +682,22 @@ u {
   .grate {
     /*width: 74.5em;	*/
   }
+}
+.animate__text-shadow {
+  border: 3px solid black;
+}
+.animate__text-shadow:before {
+  display: inline-block;
+  content: attr(data-shadow);
+  text-shadow: 0 0 1em black;
+  color: black;
+  position: absolute;
+  -webkit-transition: all 3s ease-out;
+          transition: all 3s ease-out;
+}
+.animate__text-shadow:hover:before {
+  opacity: .2;
+  color: white;
 }
 .ascii_face1 {
   -webkit-transition: 1s ease all;

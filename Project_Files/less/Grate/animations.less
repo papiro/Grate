@@ -1,5 +1,19 @@
-.animate__text-1 {
-	
+.animate__text-shadow {
+    border: 3px solid black;
+
+    &:before {
+        display: inline-block;
+        content: attr(data-shadow);
+        text-shadow: 0 0 1em black;
+        color: black;
+        position: absolute;
+        transition: all 3s ease-out;
+    }
+   
+    &:hover:before {
+        opacity: .2;
+        color: white;
+    }
 }
 
 .ascii_face1 {
