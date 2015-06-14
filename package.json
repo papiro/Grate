@@ -1,16 +1,16 @@
 {
   "name": "Grate",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "repository": {
     "type":"git",
     "url": "http://github.com/papiro/Grate.git"
   },
   "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-less": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-autoprefixer": "*"
+    "grunt": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-autoprefixer": "latest"
   }
 }
