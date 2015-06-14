@@ -28,9 +28,6 @@ module.exports = function (grunt)
 			}			
 		},
 		watch: {
-			options: {
-					livereload:9090
-				},
 			html: {
 				files: 'Project_Files/index.html'				
 			},
