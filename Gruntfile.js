@@ -1,8 +1,9 @@
+var src = 'Project_Files/less/Grate/',
+	dest = 'Project_Files/css/src/';
+
 module.exports = function (grunt)
 {
-	// Project configuration
 	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
 		cssmin: {
 			minify: {
 				expand: true,
@@ -14,9 +15,11 @@ module.exports = function (grunt)
 		},
 		less: {
 			development: {
-				files : {
-					'Project_Files/css/site.css' : 'Project_Files/less/site.less'
-				}
+				files : [
+					{ src : src + 'Grate.less', dest : dest + 'Grate.css' }
+					//{ src : src + 'animations.less', dest : dest + 'animations.css' },
+					//{ src : src + 'list-styles.less', dest : dest + 'list-styles.css' }
+				]
 			}
 		},
 		autoprefixer: {
@@ -56,5 +59,5 @@ module.exports = function (grunt)
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task(s).
-	grunt.registerTask('default', ['less', 'autoprefixer', 'cssmin']);
+	grunt.registerTask('default', ['less', 'autoprefixer']);
 };
