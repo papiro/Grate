@@ -10,7 +10,6 @@
     "grunt-contrib-watch": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-jshint": "latest",
     "grunt-autoprefixer": "latest"
   }
 }

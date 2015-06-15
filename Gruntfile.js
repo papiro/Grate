@@ -3,9 +3,6 @@ module.exports = function (grunt)
 	// Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		jshint: {
-			files: 'Gruntfile.js'
-		},
 		cssmin: {
 			minify: {
 				expand: true,
@@ -46,9 +43,6 @@ module.exports = function (grunt)
 		}
 	});
 
-	//'jshint' loader
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-
 	//'cssmin' loader
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
@@ -62,5 +56,5 @@ module.exports = function (grunt)
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task(s).
-	grunt.registerTask('default', ['less', 'jshint', 'autoprefixer', 'cssmin']);
+	grunt.registerTask('default', ['less', 'autoprefixer', 'cssmin']);
 };
