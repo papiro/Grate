@@ -24,6 +24,21 @@
   white-space: nowrap;
   text-align: left;
 }
+.module.no-scrollbar {
+  overflow: hidden;
+}
+.module.centered-lat-lng {
+  box-sizing: border-box;
+  line-height: 11.1246118em;
+  text-align: center;
+}
+.module.centered-lat-lng.small {
+  line-height: 7.41640786em;
+}
+.module.centered-lat-lng > * {
+  vertical-align: middle;
+  line-height: normal;
+}
 .module.static {
   white-space: normal;
   border-color: rgba(0, 0, 0, 0.3);
