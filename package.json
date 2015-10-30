@@ -1,16 +1,42 @@
 {
-  "name": "Grate",
+  "name": "grate.css",
   "version": "1.6.0",
-  "repository": {
-    "type":"git",
-    "url": "http://github.com/papiro/Grate.git"
+  "description": "em-based css library",
+  "main": "site.css",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1"
   },
   "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-less": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-autoprefixer": "*"
-  }
+    "less": "^2.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/papiro/Grate.git"
+  },
+  "keywords": [
+    "grate",
+    "grate.css",
+    "golden",
+    "ratio",
+    "fibonacci",
+    "em-based",
+    "fluid",
+    "responsive-first",
+    "RWD",
+    "module"
+  ],
+  "author": "papiro",
+  "license": "The Unlicense",
+  "bugs": {
+    "url": "https://github.com/papiro/Grate/issues"
+  },
+  "homepage": "https://github.com/papiro/Grate"
 }

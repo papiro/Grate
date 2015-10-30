@@ -692,8 +692,8 @@ u {
   text-shadow: 0 0 1em black;
   color: black;
   position: absolute;
-  -webkit-transition: all 3s ease-out;
-          transition: all 3s ease-out;
+  -webkit-transition: all 2.6s ease-out;
+          transition: all 2.6s ease-out;
 }
 .animate__text-shadow:hover:before {
   opacity: .2;
