@@ -6,3 +6,25 @@
 @import 'src/Grate.css';
 @import 'src/animations.css';
 @import 'src/list-styles.css';
+
+header {
+  margin: 1em 0 1em 0;
+  border-top: 2em groove #304545;
+  border-bottom: 2em groove #304545;
+}
+header > h1 {
+  color: #d4b82b;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 0 0 .2em yellow;
+  margin-left: auto;
+}
+header > h1 > span {
+  font-family: 'Lobster Two', cursive;
+}
+ul {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
