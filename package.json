@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "lessc src/Grate.less build/Grate.css",
-    "prerelease": "git add -A && git commit",
+    "prerelease": "git add -A && git commit || true",
     "release": "npm version ",
     "postrelease": "git push & git push --tags & npm publish"
   },
