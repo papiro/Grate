@@ -1,9 +1,10 @@
 //all mixins take the width value as parameters
-.moduleDimensions(){
+.goldenDimensions(){
+	margin: @a @b;
 	padding: @c @d;
 }
 
-.moduleSize(@width){
+.goldenSize(@width){
 	@height: (@width/@gr);
 	
 	width: @width;

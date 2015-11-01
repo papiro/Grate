@@ -1,44 +1,30 @@
-/*  
-* Grate.css by Pierre Alfred Pirault
-*   fluid, em-based, content-module design
-*/
-
 @import 'variables';
 @import 'colors';
 @import 'mixins';
 
-.module.no-scrollbar {
+.golden.no-scrollbar {
   overflow: hidden;
 }
-.module.centered-lat-lng {
+.golden.centered-lat-lng {
   box-sizing: border-box;
   line-height: 11.1246118em;
   text-align: center;
 }
-.module.centered-lat-lng.small {
+.golden.centered-lat-lng.small {
   line-height: 7.41640786em;
 }
-.module.centered-lat-lng > * {
+.golden.centered-lat-lng > * {
   vertical-align: middle;
   line-height: normal;
 }
 
-.grate {
-	display: flex;
-	align-items: center;
-	justify-content: flow-start;
-   align-content: flow-start;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
-
-.module {
+.golden {
 	box-sizing: border-box;
 	transition: 1s ease all;	
 
-	/*Default module size************************ */
-	.moduleSize(18em);
-	.moduleDimensions();
+	/*Default golden size************************ */
+	.goldenSize(18em);
+	.goldenDimensions();
 	border: .5em solid black;
 	overflow: auto;
 	white-space: nowrap;
@@ -75,21 +61,17 @@
 	}
 }
 
-u {
-	text-decoration: overline;
-}
-
 .x-small {
-	.moduleSize(6em);
+	.goldenSize(6em);
 }
 .small {
-	.moduleSize(12em);
+	.goldenSize(12em);
 }
 .large {
-	.moduleSize(24em);
+	.goldenSize(24em);
 }
 .x-large {
-	.moduleSize(30em);
+	.goldenSize(30em);
 }
 
 .expand, .expand-large, .expand-larger, .expand-x-large, .expand-largest {
@@ -193,27 +175,7 @@ u {
 	}
 }
 
-.module .module {
+.golden .golden {
 	position: inline;
 	margin: -.2em;
-}
-
-/*Size - 2 Modules*/
-@media screen and (min-width: 47.5em) {
-	.module {
-      flex-basis: 50%;
-	}
-}
-/*Size - 3 Modules*/
-@media screen and (min-width: 60em) {
-	.module {
-	   flex-basis: 33.333333%;	
-	}
-}
-
-/*Size - 4 Modules*/
-@media screen and (min-width: 80em) {
-	.module {
-	   flex-basis: 25%;	
-	}
 }
