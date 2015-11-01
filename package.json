@@ -1,6 +1,6 @@
 {
   "name": "grate.css",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "em-based css library",
   "main": "site.css",
   "devDependencies": {
