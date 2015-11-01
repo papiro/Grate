@@ -4,11 +4,12 @@
   "description": "em-based css library",
   "main": "site.css",
   "devDependencies": {
-    "less": "^2.5.3"
+    "less": "^2.5.3",
+    "less-plugin-autoprefix": "^1.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "lessc src/Grate.less build/Grate.css",
+    "build": "lessc src/Grate.less build/Grate.css --autoprefix",
     "prerelease": "git add -A && git commit || true",
     "release": "npm version ",
     "postrelease": "git push & git push --tags & npm publish"
