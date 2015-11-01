@@ -7,7 +7,11 @@
     "less": "^2.5.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lessc src/Grate.less build/Grate.css",
+    "prerelease": "git add -A && git commit",
+    "release": "npm version ",
+    "postrelease": "git push & git push --tags & npm publish"
   },
   "repository": {
     "type": "git",
