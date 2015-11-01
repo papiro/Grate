@@ -20,9 +20,10 @@
 .grate {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flow-start;
+  align-content: flow-start;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
 .module {
   box-sizing: border-box;
@@ -30,12 +31,13 @@
   /*Default module size************************ */
   width: 18em;
   height: 11.1246118em;
-  margin: 0.2em 0.1em;
   padding: 0.2em 0.3236068em;
   border: .5em solid black;
   overflow: auto;
   white-space: nowrap;
   text-align: left;
+  flex-basis: 100%;
+  flex-grow: 1;
 }
 .module.static {
   white-space: normal;
@@ -233,13 +235,13 @@ u {
 }
 /*Size - 3 Modules*/
 @media screen and (min-width: 60em) {
-  .grate {
-    /*width: 55.6em;*/
+  .module {
+    flex-basis: 33.333333%;
   }
 }
 /*Size - 4 Modules*/
 @media screen and (min-width: 80em) {
-  .grate {
-    /*width: 74.5em;	*/
+  .module {
+    flex-basis: 33.333333%;
   }
 }

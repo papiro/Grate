@@ -8,7 +8,6 @@
 @import 'build/list-styles.css';
 
 header {
-  margin: 1em 0 1em 0;
   border-top: 2em groove #304545;
   border-bottom: 2em groove #304545;
 }

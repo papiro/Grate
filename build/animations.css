@@ -1,6 +1,3 @@
-.animate__text-shadow {
-  border: 3px solid black;
-}
 .animate__text-shadow:before {
   display: inline-block;
   content: attr(data-shadow);
