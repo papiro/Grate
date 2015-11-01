@@ -5,7 +5,8 @@
 <title>Grate.css</title>
 
 <meta charset = "utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv = "X-UA-Compatible" content="IE=edge">
+<meta name = "viewport" content="width=device-width, initial-scale=1">
 <meta name = "author" description = "Pierre Alfred Pirault">
 <meta name = "description" description = "--Grate--, CSS adaptive grid implemenation">
 
@@ -13,25 +14,37 @@
 </head>
 
 <body>
+	<nav class="navTab">
+		<ul>
+			<li>Line1</li>
+			<li>Line2</li>
+			<li>Line3</li>
+		</ul>
+	</nav>
+
 	<header>
 		<h1 class="animate__text-shadow" data-shadow="Algorhythms.org">Algo<span>rhythm</span>s.org</h1>
 	</header>
 		
 	<main class="grate">
-		<div class="module large static">
-			<p><span class="ascii_face1"></span></p>
-		</div>
-		
-		<ul class="li__1">
-			<li>First point</li>
-			<li>Second point
-				<ul>
-					<li>Inside!</li>
-				</ul>
-			</li>
-		</ul>
+		<div class="module">
+			<span class="huge">The Tree of Love</span>
 
-		<div class="module large expand wrap">
+			<p>
+				The tree of love its roots hath spread<br/>
+				Deep in my heart, and rears its head;<br/>
+				Rich are its fruits: they joy dispense;<br/>
+				Transport the heart, and ravish sense.<br/>
+				In love’s sweet swoon to thee I cleave,<br/>
+				Bless’d source of love . . . 
+			</p>
+
+			<br/>
+			<br/>
+			- St. Francis of Asissi, Into Love’s Furnace I am Cast.
+		</div>
+
+		<div class="module">
 			<span class="title">Objective</span>
 
 			<p>
@@ -43,22 +56,14 @@
 			
 		</div>
 
-		<div class="module expand-larger">
-			<span class="huge">The Tree of Love</span>
-
-			<p>
-				The tree of love its roots hath spread<br/>
-				Deep in my heart, and rears its head;<br/>
-				Rich are its fruits: they joy dispense;<br/>
-				Transport the heart, and ravish sense.<br/>
-				In love’s sweet swoon to thee I cleave,<br/>
-				Bless’d source of love . . . ,
-			</p>
-
-			<br/>
-			<br/>
-			- St. Francis of Asissi, Into Love’s Furnace I am Cast.
-		</div>
+		<ul class="li__1">
+			<li>First point</li>
+			<li>Second point
+				<ul>
+					<li>Inside!</li>
+				</ul>
+			</li>
+		</ul>
 
 	</main>
 </body>

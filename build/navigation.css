@@ -1,0 +1,41 @@
+.navTab {
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-top: -0.5em;
+	color: #f6ab09;
+}
+.navTab::after{
+	font-size: 2em;
+	content: "☀";
+}
+@keyframes navBounce {
+	0% {
+		width: 0%;
+	}
+	50% {
+		width: 100%;
+	}
+	100% {
+		width: 50%;
+	}
+}
+.navTab:hover {
+	height: 100%;
+	width: 50%;
+	border: 1em solid #f6ab09;
+	border-left: 0;
+	border-top: 0;
+	color: white;
+	background-color: #304545;
+	animation: navBounce 0.5s 1;
+}
+.navTab > ul {
+	display: none;
+}
+.navTab:hover > ul {
+	display: initial;
+}
+.navTab:hover::after {
+	content: none;
+}

@@ -11,27 +11,3 @@
   opacity: .2;
   color: white;
 }
-.ascii_face1 {
-  -webkit-transition: 1s ease all;
-          transition: 1s ease all;
-}
-.ascii_face1:before {
-  content: ':';
-  position: relative;
-  left: 2em;
-  bottom: .5em;
-  font-size: 1.5em;
-  font-weight: bold;
-  display: inline-block;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-.ascii_face1:after {
-  content: '(_)';
-  letter-spacing: -0.1em;
-  font-size: 3em;
-}
-.ascii_face1:hover {
-  font-size: 1.7em;
-}
