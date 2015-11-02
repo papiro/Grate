@@ -1,14 +1,3 @@
-@keyframes navBounce {
-	0% {
-		width: 0%;
-	}
-	50% {
-		width: 75%;
-	}
-	100% {
-		width: 25%;
-	}
-}
 nav {
 	position: fixed;
 	left: 0;
@@ -34,7 +23,6 @@ nav > ol, nav > ul {
   position: fixed;
 	top: 25%;
 	list-style: none;	
-	margin: 1em;
 	display: none;
 }
 nav > ol li, nav > ul li {

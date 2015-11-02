@@ -1,3 +1,14 @@
+@keyframes navBounce {
+	0% {
+		width: 0%;
+	}
+	50% {
+		width: 75%;
+	}
+	100% {
+		width: 25%;
+	}
+}
 .animate__text-shadow:before {
   display: inline-block;
   content: attr(data-shadow);
