@@ -59,9 +59,6 @@
 .module > p {
   padding: .5em;
 }
-u {
-  text-decoration: overline;
-}
 /*Size - 2 Modules*/
 @media screen and (min-width: 47.5em) {
   .module {

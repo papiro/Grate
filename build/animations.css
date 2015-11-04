@@ -1,12 +1,12 @@
-@keyframes navBounce {
+@kb09eyframes navBounce {
 	0% {
 		width: 0%;
 	}
 	50% {
-		width: 75%;
+		width: 100%;
 	}
 	100% {
-		width: 25%;
+		width: 75%;
 	}
 }
 .animate__text-shadow:before {
@@ -21,4 +21,17 @@
 .animate__text-shadow:hover:before {
   opacity: .2;
   color: white;
+}
+@media screen and (min-width: 60em) {
+	@keyframes navBounce {
+		0% {
+			width: 0%;
+		}
+		50% {
+			width: 75%;
+		}
+		100% {
+			width: 25%;
+		}
+}
 }
