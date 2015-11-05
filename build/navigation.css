@@ -27,11 +27,12 @@ nav > ol, nav > ul {
 }
 nav > ol li, nav > ul li {
 	margin: 1em;
-	padding: 0.5em 0.5em 0;
+	padding: 0.5em 0.5em 0 1em;
 	border-bottom: 0.5em groove #f6ab09;
 	border-radius: 1em;
 	background-color: black;
 	width: 100%;
+	letter-spacing: 0.075em;
 }
 nav li a {
 	display: block;
@@ -39,7 +40,7 @@ nav li a {
 }
 nav > ol li:hover, nav > ul li:hover {
 	border: 0.5em ridge #f6ab09;
-	padding: 0;
+	padding: 0 0 0 0.5em;
 }
 nav:hover > ol, nav:hover > ul {
 	display: initial;
