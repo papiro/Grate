@@ -31,8 +31,8 @@ nav > ol li, nav > ul li {
 	border-bottom: 0.5em groove #f6ab09;
 	border-radius: 1em;
 	background-color: black;
-	width: 100%;
 	letter-spacing: 0.075em;
+	width: 100%;
 }
 nav li a {
 	display: block;
@@ -43,7 +43,7 @@ nav > ol li:hover, nav > ul li:hover {
 	padding: 0 0 0 0.5em;
 }
 nav:hover > ol, nav:hover > ul {
-	display: initial;
+	display: block;
 }
 nav:hover::after {
 	content: none;

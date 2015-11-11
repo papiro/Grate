@@ -9,18 +9,14 @@
 		width: 75%;
 	}
 }
-.animate__text-shadow:before {
-  display: inline-block;
-  content: attr(data-shadow);
-  text-shadow: 0 0 1em black;
+.animate__text-shadow {
   color: black;
-  position: absolute;
-  -webkit-transition: all 2.6s ease-out;
-          transition: all 2.6s ease-out;
+  -webkit-transition: all 2.4s ease-out;
+          transition: all 2.4s ease-out;
 }
-.animate__text-shadow:hover:before {
-  opacity: .2;
-  color: white;
+.animate__text-shadow:hover {
+  color: #d4b82b;
+	text-shadow: 0 1em 3em #304545;
 }
 @media screen and (min-width: 60em) {
 	@keyframes navBounce {
