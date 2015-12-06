@@ -1,0 +1,18 @@
+nav {
+	position: static;
+	left: initial;	
+	margin: 0;
+	width: 25%;
+}
+nav::after {
+	content: none;
+}
+nav:hover {
+	width: auto;
+}
+nav > ol, nav > ul {
+	position: static;
+	display: block;
+	top: initial;
+	list-style: none;	
+}

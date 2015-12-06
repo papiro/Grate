@@ -5,9 +5,11 @@
 @import 'build/normalize/Normalize.css';
 @import 'build/Grate.css';
 @import 'build/animations.css';
-@import 'build/navigation.css';
 @import 'build/text-styles.css';
 @import 'build/list-styles.css';
+
+@import 'build/navigation.css' screen and (max-width: 40em);
+@import 'build/navigation.desktop.css' screen and (min-width: 40em);
 
 header {
   border-top: 2em groove #304545;
