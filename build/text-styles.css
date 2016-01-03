@@ -14,7 +14,18 @@ a:visited {
 a:hover {
 	color: #d4b82b; 
 }
-
+p {
+	margin-bottom: 1em;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+p.home {
+	font-family: 'Berkshire Swash';
+}
+p.about {
+	font-family: 'Cherry Swash';
+}
 
 /* @rust: #b68b25;
 @rustyGold: #d4b82b;
