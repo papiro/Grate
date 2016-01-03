@@ -1,5 +1,12 @@
-ul {
-  list-style-type: none;
+nav ul {
+	padding: 0;
+}
+ul.sections > ul {
+	margin-bottom: 1em;
+}
+ul.sections > li {
+	font-size: 1.1em;
+	font-weight: bold;
 }
 .li__1 > li:before {
   display: inline-block;
