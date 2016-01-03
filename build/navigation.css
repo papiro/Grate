@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Skranji);
 
-nav {
+nav.sun {
 	position: fixed;
 	display: inherit;
 	left: 0;
@@ -8,11 +8,11 @@ nav {
 	margin-top: -0.5em;
 	color: #f6ab09;
 }
-nav::after{
+nav.sun::after{
 	font-size: 2em;
 	content: "☀";
 }
-nav:hover {
+nav.sun:hover {
 	height: 100%;
 	width: 75%;
 	border: 1em solid #f6ab09;
@@ -22,13 +22,13 @@ nav:hover {
 	background-color: #304545;
 	animation: navBounce 0.8s 1;
 }
-nav > ol, nav > ul {
+nav.sun > ol, nav.sun > ul {
   position: fixed;
 	top: 25%;
 	list-style: none;	
 	display: none;
 }
-nav > ol li, nav > ul li {
+nav.sun > ol li, nav.sun > ul li {
 	box-sizing: border-box;
 	margin: 1em;
 	padding: 0.5em 0.5em 0 1em;
@@ -38,17 +38,37 @@ nav > ol li, nav > ul li {
 	letter-spacing: 0.075em;
 	width: 100%;
 }
-nav li a {
+nav.sun li a {
 	display: block;
 	width: 100%;
 }
-nav > ol li:hover, nav > ul li:hover {
+nav.sun > ol li:hover, nav.sun > ul li:hover {
 	border: 0.5em ridge #f6ab09;
 	padding: 0 0 0 0.5em;
 }
-nav:hover > ol, nav:hover > ul {
+nav.sun:hover > ol, nav.sun:hover > ul {
 	display: block;
 }
-nav:hover::after {
+nav.sun:hover::after {
 	content: none;
+}
+
+/* nav.livity */
+nav.livity {
+	font-family: 'Skranji';
+	text-align: center;
+	margin: 1em;
+	width: 100%;
+}
+nav.livity > ol li, nav.livity > ul li {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0.5em;
+	background-color: black;
+	border-radius: 1em;
+	letter-spacing: 0.075em;
+}
+nav.livity li a {
+	display: block;
+	width: 100%;
 }

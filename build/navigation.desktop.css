@@ -1,20 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Skranji);
 
-nav {
+nav.sun {
 	position: static;
 	left: initial;	
 	margin: 0;
 	width: 25%;
 }
-nav::after {
+nav.sun::after {
 	content: none;
 }
-nav:hover {
+nav.sun:hover {
 	width: auto;
 }
-nav > ol, nav > ul {
+nav.sun > ol, nav.sun > ul {
 	position: static;
 	display: block;
 	top: initial;
 	list-style: none;	
+}
+
+/* nav.livity */
+nav.livity {
+	font-family: 'Skranji';
+	text-align: center;
+	margin: 1em;
+	width: 100%;
+}
+nav.livity > ol li, nav.livity > ul li {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0.5em;
+	background-color: black;
+	border-radius: 1em;
+	letter-spacing: 0.075em;
+}
+nav.livity li a {
+	display: block;
+	width: 100%;
 }
