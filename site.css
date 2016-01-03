@@ -12,11 +12,22 @@
 @import 'build/navigation.css' screen and (max-width: 40em);
 @import 'build/navigation.desktop.css' screen and (min-width: 40em);
 
+#view {
+	margin: 0 0.5em;
+}
+
 header {
 	width: 100%;
   border-top: 2em groove #304545;
   border-bottom: 2em groove #304545;
 	text-align: center;
+}
+header.border-celtic {
+	border: 15px solid transparent;
+	border-image: url('border.jpg') 30 30 repeat;
+}
+header.font-1 {
+	font-family: 'Titan One';
 }
 header > h1,
 header > h2,
