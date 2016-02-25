@@ -1,6 +1,6 @@
 {
   "name": "grate.css",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "em-based css library",
   "main": "site.css",
   "devDependencies": {
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "lessc src/golden-modules.less build/golden-modules.css --autoprefix",
-    "prerelease": "git add -A && git commit || true",
+    "prerelease": "git commit -a || true",
     "release": "npm version ",
     "postrelease": "git push & git push --tags & npm publish"
   },
