@@ -72,3 +72,6 @@ nav.livity li a {
 	display: block;
 	width: 100%;
 }
+nav.livity > ol li.active, nav.livity > ul li.active {
+	border-radius: 0;
+}
