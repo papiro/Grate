@@ -2,18 +2,18 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster+Two:700,400);
 @import url(https://fonts.googleapis.com/css?family=Titan+One);
 
-@import 'build/normalize/GGS_snippet.css';
-@import 'build/normalize/Normalize.css';
-@import 'build/Grate.css';
-@import 'build/animations.css';
-@import 'build/text-styles.css';
-@import 'build/list-styles.css';
-@import 'build/image-styles.css';
-@import 'build/overlay.css';
-@import 'build/garden-gallery.css';
+@import 'src/normalize/GGS_snippet.css';
+@import 'src/normalize/Normalize.css';
+@import 'src/Grate.css';
+@import 'src/animations.css';
+@import 'src/text-styles.css';
+@import 'src/list-styles.css';
+@import 'src/image-styles.css';
+@import 'src/overlay.css';
+@import 'src/garden-gallery.css';
 
-@import 'build/navigation.css' screen and (max-width: 40em);
-@import 'build/navigation.desktop.css' screen and (min-width: 40em);
+@import 'src/navigation.css' screen and (max-width: 40em);
+@import 'src/navigation.desktop.css' screen and (min-width: 40em);
 
 #view {
 	margin: 0 0.5em;
@@ -27,7 +27,7 @@ header {
 }
 header.border-celtic {
 	border: 15px solid transparent;
-	border-image: url('border.jpg') 30 30 repeat;
+	border-image: url('src/img/border/celtic-knot.jpg') 30 30 repeat;
 }
 header.font-1 {
 	font-family: 'Titan One';

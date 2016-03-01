@@ -1,15 +1,15 @@
 .golden.no-scrollbar {
   overflow: hidden;
 }
-.golden.centered-lat-lng {
+.golden.centered {
   box-sizing: border-box;
   line-height: 11.1246118em;
   text-align: center;
 }
-.golden.centered-lat-lng.small {
+.golden.centered.small {
   line-height: 7.41640786em;
 }
-.golden.centered-lat-lng > * {
+.golden.centered > * {
   vertical-align: middle;
   line-height: normal;
 }
