@@ -10,6 +10,7 @@
 @import 'build/list-styles.css';
 @import 'build/image-styles.css';
 @import 'build/overlay.css';
+@import 'build/garden-gallery.css';
 
 @import 'build/navigation.css' screen and (max-width: 40em);
 @import 'build/navigation.desktop.css' screen and (min-width: 40em);

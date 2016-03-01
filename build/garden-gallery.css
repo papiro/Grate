@@ -1,0 +1,7 @@
+main[data-garden-gallery] {
+	text-align: center;
+}
+
+main[data-garden-gallery] img {
+	border: 0.1em solid black;
+}

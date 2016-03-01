@@ -8,12 +8,12 @@
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: flow-start;
-  -webkit-justify-content: flow-start;
+  -webkit-justify-content: center;
       -ms-flex-pack: flow-start;
-          justify-content: flow-start;
-  -webkit-align-content: flow-start;
+          justify-content: center;
+  -webkit-align-content: center;
       -ms-flex-line-pack: flow-start;
-          align-content: flow-start;
+          align-content: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
