@@ -11,7 +11,6 @@
 @import 'src/image-styles.css';
 @import 'src/overlay.css';
 @import 'src/garden-gallery.css';
-@import 'src/dropup.css';
 
 @import 'src/navigation.css' screen and (max-width: 40em);
 @import 'src/navigation.desktop.css' screen and (min-width: 40em);
