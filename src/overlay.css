@@ -51,8 +51,12 @@
 [data-livity-gallery] {
   text-align: center;
 }
+[data-livity-gallery] h2 {
+  width: 100%;
+}
 [data-livity-gallery] img {
   cursor: pointer;
+  margin: 0.7em;
 }
 [data-livity-gallery-overlay] .close {
   display: flex;
