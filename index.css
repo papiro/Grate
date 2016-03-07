@@ -9,7 +9,6 @@
 @import 'src/text-styles.css';
 @import 'src/list-styles.css';
 @import 'src/image-styles.css';
-@import 'src/overlay.css';
 
 @import 'src/navigation.css' screen and (max-width: 40em);
 @import 'src/navigation.desktop.css' screen and (min-width: 40em);
