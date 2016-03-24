@@ -15,7 +15,9 @@
 
 #view {
   width: 100%;
-	margin: 0 0.5em;
+	margin: 1em 0.5em;
+  padding: 0.5em;
+  box-shadow: 0 1em 1em #000;
 }
 
 header {
@@ -23,6 +25,10 @@ header {
   border-top: 2em groove #304545;
   border-bottom: 2em groove #304545;
 	text-align: center;
+  background-color: #117045;
+}
+header img {
+  margin-bottom: -4em;
 }
 header.border-celtic {
 	border: 15px solid transparent;
@@ -40,4 +46,18 @@ header > h3 {
   text-shadow: 0 0 0.2em #d4b82b;
 	position: relative;
 	z-index: 2;
+}
+
+.bio img {
+  width: 20%;
+  float: right;
+  margin-bottom: 0.5em;
+}
+.bio {
+  clear: right;
+}
+
+.intl-tree-climbing ul ul li,
+.gardening ul ul li {
+  padding: 0.5em 0;
 }

@@ -24,7 +24,6 @@ nav.livity {
 	font-family: 'Skranji';
 	text-align: center;
 	margin: 1em;
-	width: 100%;
 }
 nav.livity > ol li, nav.livity > ul li {
 	display: inline-block;
