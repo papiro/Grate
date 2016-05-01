@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prerelease": "git commit -a || true",
     "release": "npm version ",
-    "postrelease": "git push & git push --tags & npm publish"
+    "postrelease": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
