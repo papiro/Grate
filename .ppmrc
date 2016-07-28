@@ -1,0 +1,9 @@
+# Project name
+  name=grate
+
+# Project repositories
+  primary=git@godswhim.us:grate.git
+  secondary=git@gitlab.com:papiro/grate.git
+  tertiary=/var/backups/grate.git
+
+# Project submodules
