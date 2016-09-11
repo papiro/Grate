@@ -1,0 +1,9 @@
+ol {
+  counter-reset: counter;
+  list-style-type: none;
+}  
+
+li:before {
+  content: counter(counter);
+  counter-increment: counter;
+}
