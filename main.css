@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 ol {
   counter-reset: counter;
   list-style-type: none;
