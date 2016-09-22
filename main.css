@@ -14,7 +14,7 @@ ol {
   list-style-type: none;
 }  
 
-li:before {
+ol li:before {
   content: counter(counter);
   counter-increment: counter;
 }
