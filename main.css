@@ -1,8 +1,5 @@
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 img {
@@ -17,4 +14,51 @@ ol {
 ol li:before {
   content: counter(counter);
   counter-increment: counter;
+}
+
+fieldset {
+  border-color: rgba(0, 0, 0, 0.1);
+  padding-top: 1.5em;
+  border-radius: 1em;
+  margin: 0 auto;
+}
+
+fieldset legend {
+  font: bold 1.2rem sans-serif;
+  box-shadow: 0 1rem 1rem 0.5rem #ccf, -0.5rem -0.5rem 1rem 1rem #cca;
+  margin-left: 0.5em;
+  padding: 0.5em;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+fieldset label {
+  cursor: pointer;
+}
+
+fieldset input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+fieldset input:not(:last-of-type) {
+  margin-bottom: 2em;
+}
+
+fieldset label:hover + input {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 30em) {
+  fieldset {
+    width: 50%;    
+  }
+  fieldset label {
+    width: 25%;
+    padding-right: 1em;
+    text-align: right;    
+  }  
+  fieldset input {
+    width: 75%;
+  }
 }
