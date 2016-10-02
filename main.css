@@ -78,3 +78,7 @@ fieldset label:hover + input {
     width: 25%;    
   }
 }
+
+.hide {
+  display: none;
+}
