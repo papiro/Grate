@@ -17,6 +17,13 @@ img {
   max-width: 100%;
 }
 
+ul:before,
+ul,
+ul:after {
+  margin: 0;
+  padding: 0;
+}
+
 ol {
   counter-reset: counter;
   list-style-type: none;
