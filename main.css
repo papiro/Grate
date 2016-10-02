@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  max-width: 70em;
+  max-width: 70rem;
 }
 
-@media screen and (min-width: 70em) {
+@media screen and (min-width: 70rem) {
   body {
     margin: 0 auto;
   }
