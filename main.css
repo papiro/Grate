@@ -9,6 +9,11 @@ body {
   }
 }
 
+main {
+  /* support for IE11 */
+  display: block;
+}
+
 nav li a {
   text-decoration: none;
 }
