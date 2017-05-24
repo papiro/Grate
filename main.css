@@ -1,3 +1,5 @@
+@import './grate.css';
+
 body {
   margin: 0;
   max-width: 70rem;
@@ -81,6 +83,7 @@ button {
   cursor: pointer;
   border: 0;
 }
+
 label {
   font-weight: bold;
 }
@@ -89,6 +92,11 @@ label.optional:after {
   padding-left: 5px;
   font-size: 0.8em;
   font-weight: lighter;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hide {
