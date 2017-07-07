@@ -99,6 +99,13 @@ input {
   box-sizing: border-box;
 }
 
+.btn-group {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .hide {
   display: none;
 }
