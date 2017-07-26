@@ -1,11 +1,22 @@
+.\@full,
+.\@1\/2,
 .\@1\/3,
 .\@2\/3,
+.\@2\/5,
+.\@4\/5,
+.\@9\/10,
+.\@tablet-full,
 .\@tablet-1\/3,
 .\@tablet-2\/3,
-.\@tablet-1\/2 {
+.\@tablet-1\/2,
+.\@tablet-9\/10,
+.\@desktop-full {
   box-sizing: border-box;
 }
 
+.\@full {
+  width: 100%;
+}
 .\@1\/2 {
   width: 50%;
 }
