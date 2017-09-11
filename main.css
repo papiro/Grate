@@ -49,11 +49,11 @@ fieldset {
   margin: 0 auto;
 }
 fieldset legend {
-  font: bold 1.2rem sans-serif;
-  box-shadow: 0 1rem 1rem 0.5rem #ccf, -0.5rem -0.5rem 1rem 1rem #cca;
+  font: bold 1.2em sans-serif;
+  box-shadow: 0 1em 1em 0.5em #ccf, -0.5em -0.5em 1em 1em #cca;
   margin-left: 0.5em;
   padding: 0.5em;
-  border: 1px solid black;
+  border: 0.1em solid black;
   border-radius: 50%;
 }
 fieldset label {
@@ -92,7 +92,7 @@ label {
 }
 label.optional:after {
   content: " (optional)";
-  padding-left: 5px;
+  padding-left: 0.45em;
   font-size: 0.8em;
   font-weight: lighter;
 }
@@ -161,7 +161,7 @@ input {
 }
 .loading:before,
 .loading:after {
-  box-shadow: 0 0 5px 5px gray;
+  box-shadow: 0 0 0.45em 0.45em gray;
   content: "";
   position: absolute;
 }
@@ -189,5 +189,5 @@ input {
 }
 .modal_close:after:hover {
   color: #fff;
-  text-shadow: 0 0 2px 3px #000;
+  text-shadow: 0 0 0.1em 0.15em #000;
 }
