@@ -68,4 +68,7 @@
   .\@desktop-full {
     width: 100% !important;
   }
+  .\@desktop-2\/5 {
+    width: 40% !important;
+  }
 }
