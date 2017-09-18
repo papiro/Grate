@@ -8,10 +8,11 @@
 .\@2\/10,
 .\@9\/10,
 .\@tablet-full,
+.\@tablet-1\/2,
 .\@tablet-1\/3,
 .\@tablet-2\/3,
 .\@tablet-1\/4,
-.\@tablet-1\/2,
+.\@tablet-2\/5,
 .\@tablet-9\/10,
 .\@desktop-full {
   box-sizing: border-box !important;
@@ -58,7 +59,10 @@
   .\@tablet-1\/5 {
     width: 20% !important;
   }  
-   .\@tablet-1\/2 {
+  .\@tablet-2\/5 {
+    width: 40% !important;
+  }  
+  .\@tablet-1\/2 {
     width: 50% !important;
   }  
   .\@tablet-1\/4 {
