@@ -5,6 +5,11 @@ body {
   max-width: 70rem;
 }
 
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 70rem) {
   body {
     margin: 0 auto;
